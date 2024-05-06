@@ -1,0 +1,77 @@
+.contact-section{
+    margin-top: 100px;
+}
+.contact-form-section {
+    width: 80%;
+    margin:50px auto 0 auto;
+    padding: 20px;
+}
+p{
+    width: 80%;
+    margin: auto;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {  
+  width: 100%;
+  font-family: 'manrope', sans-serif;
+  border: none;
+  border-bottom: solid 1px #444444; 
+  margin: 10px 0 20px 0;
+}
+input[type="file"]{
+    padding: 20px 0;
+}
+label{
+    font-family:'manrope', sans-serif;
+    font-size: 16px;
+}
+form>.line-form{
+    width: 100%;
+    margin: 0;
+    height: 1px;
+    background-color: #111111cb;
+    margin: 5px 0;
+}
+.boton-box{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type="submit"]{
+    text-transform: capitalize;
+    background-color: #8b8b8b;
+    color: white;
+    padding: 10px 70px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'manrope', sans-serif;
+    font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+.contact-section{
+    margin-top: 150px;
+}
+.contact-form-section {
+    width: 80%;
+    margin: 10px auto 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-form-section>img{
+    width: 40%;
+}
+.contact-form-section>.contact-form{
+    width: 60%; 
+    padding: 40px;  
+}
+form{
+    padding: 10px;
+}
+
+}

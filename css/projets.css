@@ -1,0 +1,123 @@
+section{
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+}
+.projects-section{
+    width: 90%;
+    margin: auto;
+}
+.projects-section>h1{
+    margin-top: 50px;
+}
+.icon-plus{
+    color: #EBC300;
+    cursor: pointer;
+}
+.icon-minus{
+    display: none;
+    color: #EBC300;
+    cursor: pointer;
+}
+.menu-desplegable{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu-desplegable>article{
+    width: 90%;
+    padding: 0px;
+    margin-top: 20px;
+}
+.menu-desplegable>article>.menu-desplegable-titulo {
+    text-align: center;
+    padding: 10px;
+    border-bottom: solid 1px #111111;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center; 
+}
+.menu-desplegable-titulo>h2{
+    font-size: 30px;
+    line-height: 2rem;
+    text-align: left;
+}
+.menu-desplegable-descriptionVertical, .menu-desplegable-description{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-desplegable>article>.menu-desplegable-titulo>span{
+    font-size: 30px;
+}
+.menu-desplegable>article>p{
+    text-align: justify;
+    padding: 20px 10px;
+}
+
+.house-card{
+    width: 48%;
+    margin: 10px 0px;
+    position: relative;
+    overflow: hidden; /* Oculta el texto que se desvanecerá */
+}
+.house-card-h{
+    width: 100%;
+    margin: 10px 0px;
+    position: relative;
+    overflow: hidden; /* Oculta el texto que se desvanecerá */
+}
+.house-card>img, .house-card-h>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.house-card>div>h3, .house-card-h>div>h3{
+    background-color:#807e7eb7;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* --------------------TABLET------------------------ */
+@media screen and (min-width: 768px){
+    .menu-desplegable-description{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-desplegable-titulo>h2{
+        font-size: 40px;
+        text-align: left;
+        line-height: 3rem;
+    }
+    .house-card{
+        width: 22%;
+        margin: 10px 0px;
+        position: relative;
+        overflow: hidden; /* Oculta el texto que se desvanecerá */
+    }
+    .house-card-h{
+        width: 33%;
+        height: 250px;
+        margin: 10px 0px;
+        position: relative;
+        overflow: hidden; 
+    }
+}
